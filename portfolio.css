@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Poppins:ital,wght@0,300;1,600&family=Raleway:wght@300;400&family=Roboto:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+    padding-bottom: 80px; /* Increased padding for footer clearance */
+}
+
+.container {
+    max-width: 90%; /* Adjusted for better responsiveness */
+    margin: 15px auto;
+    padding: 0 15px;
+}
+
+.nav {
+    position: fixed;
+    background-color: #222;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000; /* Ensure navigation stays above content */
+}
+
+.nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav.active {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav.active a {
+    color: #222;
+}
+
+.nav a.current {
+    color: red;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: red;
+}
+
+.hero {
+    background-image: url(https://i.pinimg.com/564x/12/19/91/121991a40151cf3ad47ae68d0eae3cf9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 80vh; /* Adjusted for better viewport coverage */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px; /* Slightly increased for spacing */
+    z-index: -1;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+.hero h2 {
+    font-size: 36px;
+    line-height: 54px;
+    margin: 15px 0;
+    letter-spacing: 1px;
+    text-align: center; /* Centered hero text */
+}
+
+.container h1.first {
+    color: #1C4D79;
+    font-size: 28px; /* Adjusted for better readability */
+    margin: 30px 0 15px; /* Increased top margin for section separation */
+    text-align: center; /* Centered section titles */
+}
+
+.container .second {
+    font-size: 16px; /* Adjusted font size for better readability */
+    text-align: left; /* Left align text content */
+    margin-bottom: 30px; /* Increased bottom margin for section separation */
+}
+
+.container .prestasi ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.image img {
+    max-width: 15%;
+    height: auto;
+    display: block; /* Ensures images resize properly */
+    margin: 0 auto; /* Center images */
+}
+
+.footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+    clear: both; /* Ensures footer clears content */
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer .social-icons {
+    margin-top: 10px;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    color: #ccc;
+}
+
+.footer .social-icons a i {
+    font-size: 24px;
+}
+
+.wa {
+    color: #06D001;
+}
+
+.x {
+    color: #1DA1F2;
+}
+
+.ig {
+    color: #c13584;
+}
